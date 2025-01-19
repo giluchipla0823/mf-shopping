@@ -68,11 +68,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "mf-shopping:build:production",
+							"buildTarget": "mf-shopping:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "mf-shopping:build:development"
+							"buildTarget": "mf-shopping:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -85,7 +85,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "mf-shopping:build",
+						"buildTarget": "mf-shopping:build",
 						"extraWebpackConfig": "webpack.config.js"
 					}
 				},
