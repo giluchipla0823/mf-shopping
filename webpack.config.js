@@ -6,7 +6,7 @@ const {
 const moduleFederationConfig = withModuleFederationPlugin({
   name: "mf-shopping",
   exposes: {
-    "./ProductsModule": "./src/app/products/products.module.ts",
+    "./ProductsComponent": "./src/app/products/products.component.ts",
   },
 
   shared: {
@@ -18,5 +18,6 @@ const moduleFederationConfig = withModuleFederationPlugin({
   },
 });
 
-moduleFederationConfig.output.publicPath = "http://localhost:4201/";
+// moduleFederationConfig.output.publicPath = "http://localhost:4201/";
+
 module.exports = moduleFederationConfig;
